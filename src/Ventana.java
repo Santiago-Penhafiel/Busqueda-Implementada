@@ -8,12 +8,14 @@ public class Ventana {
     private JButton buscarButton;
     private JButton eliminarButton;
     private JButton ordenarButton;
-    private JTextArea txtArea;
+    public JTextArea txtArea;
     private JLabel label;
     private JButton mostrarListaButton;
     Lista lista = new Lista();
 
     public Ventana() {
+
+        lista.mostrarLista(txtArea);
         agregarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
